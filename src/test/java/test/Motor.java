@@ -9,10 +9,10 @@ public class Motor {
     }
     void asignarTipo(String tipo){
         switch (tipo){
-            case "electrico","gasolina":{
+            case "electrico":
+            case "gasolina":
                 this.tipo=tipo;
                 break;
-            }
             default:
                 break;
         }
