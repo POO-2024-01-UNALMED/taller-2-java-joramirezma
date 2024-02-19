@@ -14,8 +14,9 @@ public class Auto {
             if (asientos[i] != null) {
                 contadorAsientos++;
         }
-        return contadorAsientos;
-    }
+        
+    } return contadorAsientos;
+    
     String verificarIntegridad(){
         String verificador="si";
         if (motor.registro==this.registro){
