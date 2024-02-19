@@ -11,9 +11,12 @@ public class Auto {
     int cantidadAsientos(){
         int contadorAsientos = 0;
         for (int i = 0; i < asientos.length; i++) {
-            if (asientos[i] != null) {
-                contadorAsientos++;
-        }
+            if (asientos[i] != null){
+                    if (asientos[i].registro != this.registro){
+                        verificador="no";
+                        break;
+                    }
+                }
         
     } return contadorAsientos;
     }
