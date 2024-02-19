@@ -10,7 +10,7 @@ public class Auto {
 
     int cantidadAsientos(){
         int contadorAsientos = 0;
-        for (int i = 0; i <= asientos.length; i++) {
+        for (int i = 0; i < asientos.length; i++) {
             contadorAsientos++;
         }
         return contadorAsientos;
@@ -18,7 +18,7 @@ public class Auto {
     String verificarIntegridad(){
         String verificador="si";
         if (motor.registro==this.registro){
-            for (int i = 0; i <= asientos.length; i++) {
+            for (int i = 0; i < asientos.length; i++) {
                 if (asientos[i].registro != this.registro){
                     verificador="no";
                     break;
@@ -27,7 +27,7 @@ public class Auto {
         }else {
             verificador="no";
         }
-        if (verificador=="si"){
+        if (verificador.equals("si")){
             return "Auto original";
         }else {
             return "Las piezas no son originales";
